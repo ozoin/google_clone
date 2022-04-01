@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400;500,600;700&display=swap");
+html *
+{
+   font-family: Arial !important;
+}
+
+.blog_img {
+    min-height: 30%;
+    max-height: 100%;
+    width: 100%;
+}
+@layer components {
+    .btn {
+        @apply bg-[#f8f9fa] p-3 rounded-md ring-gray-200 text-sm text-gray-800 hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md;
+    }
+    .link {
+        @apply hover:underline cursor-pointer
+    }
+
+}
